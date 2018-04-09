@@ -1,19 +1,16 @@
 class Task {
-  constructor (code, description) {
+  constructor(description, date) {
     this.description = description;
+    this.date = date;
+    this.code = 0;
     this.isCompleted = false;
-    this.code = code;
   }
 
   printInfo () {
     if (this.isCompleted) {
-      return this.description + ' - Completada'
+      return this.description + ' - Completada';
     } else {
-      return this.description + ' - Não completada'
+      return this.description + ' - Não completada';
     }
-  }
-
-  complete () {
-    this.isCompleted = true;
   }
 }
