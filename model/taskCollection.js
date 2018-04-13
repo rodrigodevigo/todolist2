@@ -9,7 +9,9 @@ class TaskCollection {
   }
 
   retrieve (code) {
-
+    return this.data.find((task) => {
+      return task.code == code;
+    });
   }
 
   // update () {

@@ -14,12 +14,14 @@ class TaskController {
 
   completeTask (code) {
     let task = this.model.retrieve(code);
-    if (task == null) {
+    if (task == undefined) {
       return false;
     }
     task.isCompleted = true;
     return true;
   }
+
+  
 
 
 }
